@@ -19,6 +19,14 @@ def closeProgram(delay=0):
 def wait(t=0.5):
     time.sleep(t)
 
+# 2 required arg (string stringFull & string search)
+# no default value;
+# return if second string is inside first string
+def isInString(stringfull, search):
+    if stringfull.find(search) != -1:
+        return True
+    else:
+        return False
 
 # generate random number
 # 2 optional args (int min 'minimum' ; int max 'maximum')
